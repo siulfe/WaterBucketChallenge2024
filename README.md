@@ -67,6 +67,7 @@ The program is MVC .Net Core 2.2 application.
 - X: 5
 - Y: 15
 - Z: 10
+
 **Response expected**
 ```json
 {
@@ -112,6 +113,7 @@ The program is MVC .Net Core 2.2 application.
 - X: 2
 - Y: 2
 - Z: 2
+
 **Response expected**
 ```json
 {
