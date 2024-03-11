@@ -137,7 +137,9 @@ The program is MVC .Net Core 2.2 application.
 - X: 8
 - Y: 16
 - Z: 12
+
 **Response expected**
+
 "No Solution"
 
 4-
@@ -145,6 +147,7 @@ The program is MVC .Net Core 2.2 application.
 - X: 4
 - Y: 24
 - Z: 12
+
 **Response expected**
 ```json
 {
@@ -220,7 +223,9 @@ The program is MVC .Net Core 2.2 application.
 - X: 3
 - Y: 11
 - Z: 5
+
 **Response expected**
+
 "No Solution"
 
 6-
@@ -228,6 +233,7 @@ The program is MVC .Net Core 2.2 application.
 - X: 4
 - Y: 11
 - Z: 3
+
 **Response expected**
 ```json
 {
@@ -283,6 +289,7 @@ The program is MVC .Net Core 2.2 application.
 - X: 2
 - Y: 10
 - Z: 4
+
 **Response expected**
 ```json
 {
