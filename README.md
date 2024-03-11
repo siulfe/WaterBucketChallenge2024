@@ -28,13 +28,16 @@ The Json to make the requests must contain X, Y and Z
 **POST:** https://localhost:44332/Home/test
 
 **PAYLOAD:**
-```{
+```json
+{
     "X":2,
     "Y":2,
     "Z":2
-}```
+}
+```
 **RESPONSE:**
-```{
+```json
+{
     "good": [
         {
             "x": 0,
@@ -49,7 +52,8 @@ The Json to make the requests must contain X, Y and Z
             "explanation": "Fill bucket Y. Solved"
         }
     ]
-}```
+}
+```
 
 # Instructions to run the program
 1- Clone the repository https://github.com/siulfe/WaterBucketChallenge2024/tree/master
@@ -64,7 +68,8 @@ The program is MVC .Net Core 2.2 application.
 - Y: 15
 - Z: 10
 **Response expected**
-```{
+```json
+{
     "good": [
         {
             "x": 0,
@@ -99,7 +104,8 @@ The program is MVC .Net Core 2.2 application.
             "explanation": "Transfer from bucket X to bucket Y. Solved"
         }
     ]
-}```
+}
+```
 
 2- 
 **Values:**
@@ -107,7 +113,8 @@ The program is MVC .Net Core 2.2 application.
 - Y: 2
 - Z: 2
 **Response expected**
-```{
+```json
+{
     "good": [
         {
             "x": 0,
@@ -122,7 +129,8 @@ The program is MVC .Net Core 2.2 application.
             "explanation": "Fill bucket Y. Solved"
         }
     ]
-}```
+}
+```
 
 3-
 **Values**
@@ -138,7 +146,8 @@ The program is MVC .Net Core 2.2 application.
 - Y: 24
 - Z: 12
 **Response expected**
-```{
+```json
+{
     "good": [
         {
             "x": 4,
@@ -203,7 +212,8 @@ The program is MVC .Net Core 2.2 application.
             "explanation": "Transfer from bucket X to bucket Y. Solved"
         }
     ]
-}```
+}
+```
 
 5-
 **Values**
@@ -219,7 +229,8 @@ The program is MVC .Net Core 2.2 application.
 - Y: 11
 - Z: 3
 **Response expected**
-```{
+```json
+{
     "good": [
         {
             "x": 0,
@@ -264,7 +275,8 @@ The program is MVC .Net Core 2.2 application.
             "explanation": "Transfer from bucket Y to bucket X. Solved"
         }
     ]
-}```
+}
+```
 
 7-
 **Values**
@@ -272,7 +284,8 @@ The program is MVC .Net Core 2.2 application.
 - Y: 10
 - Z: 4
 **Response expected**
-```{
+```json
+{
     "good": [
         {
             "x": 2,
@@ -327,7 +340,8 @@ The program is MVC .Net Core 2.2 application.
             "explanation": "Transfer from bucket Y to bucket X. Solved"
         }
     ]
-}```
+}
+```
 
 # Additional information
 There are only two endpoints, the one used by the UI and the one used to make POST requests. Both are located in the HomeController.cs file. The operation of the two endpoints is very similar.
