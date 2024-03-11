@@ -1,0 +1,62 @@
+﻿@model WaterBucketChallenge.Models.TestResult
+
+@{
+    ViewData["Title"] = "Water Bucket Challenge 2024";
+}
+
+<div class="text-center">
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <input type="number" class="form-control" placeholder="Value X" required min="1" name="X" />
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <input type="number" class="form-control" placeholder="Value Y" required min="1" name="Y" />
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <input type="number" class="form-control" placeholder="Value Z" required min="1" name="Z" />
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <button type="submit" class="form-control btn btn-block btn-primary" />Test</button>
+                </div>
+            </div>
+        </form>
+
+        @if (Model == null)
+        {
+            <div class="row mt-1">
+                <div class="col-12">
+                    <p class="alert-info">No Solution</p>
+                </div>
+            </div> 
+        }
+        else
+        {
+            <div class="row mt-2">
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <tr class="text-center">
+                            <th>Bucket X</th>
+                            <th>Bucket Y</th>
+                            <th>Explanation</th>
+                        </tr>
+
+                        @if (Model?.good != null)
+                        {
+                            @foreach (var item in Model.good)
+                            {
+                                <tr>
+                                    <th>@Html.DisplayFor(_ => item.X)</th>
+                                    <th>@Html.DisplayFor(_ => item.Y)</th>
+                                    <th>@Html.DisplayFor(_ => item.explanation)</th>
+                                </tr>
+                            }
+                        }
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
+</div>
