@@ -94,7 +94,6 @@ namespace WaterBucketChallenge.Service
             }
         }
 
-
         private Process[] add(uint X, uint Y, uint Z)
         {
             List<Process> resp = new List<Process>();
@@ -146,10 +145,12 @@ namespace WaterBucketChallenge.Service
 
             return isRestable(X, Y, Z) || isSumable(X, Y, Z);
         }
+        
         private bool isRestable(uint X, uint Y, uint Z)
         {
             return X % Y == Z || Y % X == Z || (X < Z && Z % X == 0) || (Y < Z && Z % Y == 0);
         }
+        
         private bool isSumable(uint X, uint Y, uint Z)
         {
             return Z % X == 0 || Z % Y == 0;
