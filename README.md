@@ -61,6 +61,10 @@ The Json to make the requests must contain X, Y and Z
 
 The program is MVC .Net Core 2.2 application.
 
+**Requirements**
+1- Visual Studio 2019 or more current.
+2- .Net Core 2.2
+
 # Test Case
 1- 
 **Values:**
